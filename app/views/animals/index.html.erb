@@ -1,6 +1,5 @@
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 <p style="color: green"><%= notice %></p>
-
-<h1>Animals</h1>
 
 <div id="animals">
   <% @animals.each do |animal| %>
@@ -11,4 +10,6 @@
   <% end %>
 </div>
 
-<%= link_to "New animal", new_animal_path %>
+</div>
+
+<%= link_to "New animal", new_animal_path, class:'btn btn-primary' %>

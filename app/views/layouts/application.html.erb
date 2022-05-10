@@ -11,6 +11,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render "layouts/navbar" %>
+    <div class='bg-light py-5' style='margin-top:15px'>
+      <div class="container">
+        <%= yield %>
+      </div>
+    </div>
+    <%= render "layouts/footer" %>
   </body>
 </html>
